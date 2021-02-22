@@ -1,0 +1,40 @@
+.c-navigation {
+  display: flex;
+  align-items: center;
+  
+  &__item {
+    @include textParameters (600, 1.6rem, 2.8rem, 0.1, $white);
+    text-transform: capitalize;
+
+    &:not(:first-child) {
+      margin-left: 40px;
+
+      @include screen-max ($mobile) {
+        margin-left: 0;
+      }
+    }
+
+    &_lightgrey {
+      color: $lightgrey;
+      @include screen-max ($mobile) {
+        margin: 0;
+        
+        &:not(:first-child) {
+          margin-top: 16px;
+        }
+      }
+
+      &:hover {
+        color: $white;
+      }
+    }
+
+    &_dark {
+      color: $grey;
+
+      &_active {
+        color: $darkblue;
+      }
+    }
+  }
+}

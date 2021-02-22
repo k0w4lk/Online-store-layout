@@ -1,0 +1,139 @@
+.p-m-instagram-shop {
+  background-color: $darkpurple;
+  padding: 56px 0 50px;
+
+  @include screen-max ($mobile) {
+    padding: 68px 12px;
+  }
+
+  @include screen-max ($mobile) {
+    flex-direction: column;
+  }
+
+  &__heading {
+    @include textParameters (700, 4rem, 5.7rem, 0.1, $white);
+    text-align: center;
+
+    @include screen-max ($mobile) {
+      padding: 0 5px;
+    }
+  }
+
+  &__slider {
+    max-width: 1440px;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__categories {
+    display: flex;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__category {
+    display: flex;
+    position: relative;
+
+    @include screen-max ($mobile) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &:not(:first-child) {
+     margin-left: 20px;
+    }
+
+    @include screen-max ($mobile) {      
+      &:nth-child(n+2) {
+        display: none;
+      }
+    }
+  }
+
+  &__image {
+    width: 350px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+  &__button {
+    @include textParameters (700, 1.6rem, 2.8rem, 0.1, $white);
+    position: absolute;
+    top: 14px;
+    left: 17px;
+    padding: 18px 38px;
+    border-radius: 10px;
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    text-transform: capitalize;
+    border: 2px solid $white;
+  }
+
+  &__switcher {
+    display: flex;
+    margin: 44px auto 0;
+    align-items: center;
+
+    @include screen-max ($mobile) {
+      margin-top: 60px;
+    }
+
+    &-button {
+      width: 41px;
+      height: 41px;
+      border-radius: 50%;
+      box-shadow: 0px, 13px rgba(0, 0, 0, 0.07);
+      border: 1px solid $sky;
+
+      @include screen-max ($mobile) {
+        display: none;
+      }
+
+      &_left {
+        background: url(../../../images/instagram/button-left.svg) no-repeat center $white;
+        margin-right: 34px;
+
+        &_inactive {
+          border-color: rgba(255, 255, 255, 0.4);
+          background: url(../../../images/instagram/button-left-inactive.svg) no-repeat center rgba(255, 255, 255, 0.2);
+        }
+      }
+
+      &_right {
+        background: url(../../../images/instagram/button-right.svg) no-repeat center $white;
+        margin-left: 34px;
+
+        &_inactive {
+          border-color: rgba(255, 255, 255, 0.4);
+          background: url(../../../images/instagram/button-right-inactive.svg) no-repeat center rgba(255, 255, 255, 0.2);
+        }
+      }
+    }
+
+    &-position {
+      width: 15px;
+      height: 15px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+
+      &:not(:first-of-type) {
+        margin-left: 5px;
+      }
+
+      &_active {
+        background-color: #48AAFF;
+      }
+
+      &:nth-of-type(n+4) {
+        display: none;
+
+        @include screen-max ($mobile) {
+          display: block;
+        }
+      }
+    }
+  }
+}

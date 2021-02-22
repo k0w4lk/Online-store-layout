@@ -1,0 +1,56 @@
+.p-p-other-products {
+  display: flex;
+  flex-direction: column;
+
+  &__heading {
+    @include textParameters(700, 2.4rem, 3.6rem, 0, $darkblue);
+    max-width: 1160px;
+    width: 100%;
+    margin: 48px auto 42px;
+
+    @include screen-max($mobile) {
+      max-width: 320px;
+      text-align: center;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    position: relative;
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto 68px;
+
+    @include screen-max($mobile) {
+      max-width: 320px;
+    }
+
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  &__product-card {
+    max-width: 210px;
+
+    @include screen-max($mobile) {
+      max-width: 320px;
+
+      &:nth-child(n+2) {
+        display: none;
+      }
+    }
+  }
+
+  &__button-left {
+    transform: translateX(-75%);
+    top: 33%;
+  }
+
+  &__button-right {
+    transform: translateX(-25%);
+    top: 33%;
+  }
+}

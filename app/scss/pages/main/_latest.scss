@@ -1,0 +1,31 @@
+.p-m-latest {
+  padding: 90px 0 80px;
+
+  @include screen-max ($mobile) {
+    padding: 42px 56px 32px;
+  }
+
+
+  &__container {
+    display: grid;
+    justify-content: center;
+    position: relative;
+    grid-template: repeat(2, 1fr) / repeat(4, 240px);
+    gap: 50px 40px;
+    margin-top: 60px;
+
+    @include screen-max ($mobile) {
+      grid-template: repeat(4, 277px) / 320px;
+      gap: 40px 0;
+    }
+
+
+    &:after {
+      @include sectionEndLine(79px) {
+        @include screen-max ($mobile) {
+          margin-top: 31px;
+        }
+      }
+    }
+  }
+}

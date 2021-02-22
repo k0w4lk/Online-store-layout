@@ -1,0 +1,196 @@
+.c-filter {
+  padding: 20px 18px 4px;
+  max-width: 380px;
+  align-self: flex-start;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  background-color: $white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+  @include screen-max ($mobile) {
+    display: none;
+  }
+
+  &__search {
+    @include textParameters(500, 1.4rem, 1.6rem, 0, $grey, 'Roboto');
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 7px;
+    border: 1px solid #dcdcdc;
+    background: #fcfcfc;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25) inset;
+
+    &-input {
+      border: none;
+      outline: none;
+      width: 100%;
+      padding: 18px 23px;
+      background: transparent;
+    }
+
+    &-button {
+      width: 24px;
+      height: 24px;
+      margin-right: 15px;
+      background: url(../../images/search.svg) no-repeat center;
+      border: none;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 35px 16px;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    margin-bottom: 20px;
+
+    &-item {
+      display: flex;
+      margin-bottom: 17px;
+    }
+  }
+
+  &__type {
+    display: grid;
+    grid-template: 25px 1fr / 1fr 25px;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 22px;
+    }
+
+    &-text {
+      @include textParameters(700, 1.6rem, 2.5rem, 0, $darkblue) {
+        text-transform: capitalize
+      }
+    }
+
+    &-button {
+      @include textParameters(600, 1.6rem, 1.6rem, 0.1, $white);
+      width: 25px;
+      height: 25px;
+      border: none;
+      border-radius: 50%;
+      color: $lightgrey;
+
+      &_active {
+        background-color: $lightblue;
+        color: $white;
+      }
+    }
+
+    &-items {
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      display: flex;
+      flex-direction: column;
+      margin-top: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #e4e4e4;
+    }
+
+    &-item {
+      @include textParameters(600, 1.4rem, 2.8rem, 0.1, $grey) {
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  &__heading {
+    @include textParameters(700, 1.6rem, 2.4rem, 0, $darkblue);
+    margin-bottom: 24px;
+  }
+
+  &__counter {
+    @include textParameters(600, 1.4rem, 2.8rem, 0.1, $grey);
+    margin-left: auto;
+  }
+
+  &__price-inputs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 29px;
+    margin-top: 35px
+  }
+  
+  &__price-input {
+    @include textParameters(500, 1.5rem, 1.6rem, 0, $darkblue, 'Roboto');
+    width: 47.27%;
+    padding: 21px 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+  }
+
+  &__price-range {
+    height: 6px;
+    background-color: #e5e5e5;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 34px;
+
+    &_active {
+      position: absolute;
+      height: 6px;
+      width: 77.5%;
+      left: 5%;
+      background-color: #2DC071;
+    }
+
+    &-position {
+      display: block;
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      background: url(../../images/price-label.svg) no-repeat center;
+      background-color: inherit;
+      border-radius: 50%;
+
+      &_left {
+        transform: translateX(-50%) translateY(-25%);
+      }
+
+      &_right {
+        right: 0;
+        transform: translateX(50%) translateY(-25%);
+      }
+    }
+
+    &-label {
+      position: absolute;
+      @include textParameters(700, 1.6rem, 2.4rem, 0, $white);
+      padding: 0 6px;
+      background-color: $darkblue;
+      border-radius: 2px;
+      top: -40px;
+      height: 24px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 2px solid transparent;
+        border-right: 2px solid transparent;
+        border-top: 3px solid $darkblue;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      &_left {
+        transform: translateX(-50%);
+      }
+
+      &_right {
+        right: 0;
+        transform: translateX(50%);
+      }
+    }
+  }
+}

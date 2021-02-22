@@ -1,0 +1,43 @@
+.c-subnavigation {
+  display: flex;
+  align-items: center;
+  padding: 24px 60px;
+  border-top: 1px solid rgb(237, 237, 237);
+  border-bottom: 1px solid rgb(237, 237, 237);
+
+  @include screen-max ($mobile) {
+    padding-left: 52px;
+    padding-right: 52px;
+  }
+
+  &__link {
+    @include textParameters(400, 1.4rem, 2.8rem, 0.1, $darkblue);
+    text-transform: capitalize;
+    position: relative;
+
+    &_active {
+      color: $grey;
+    }
+
+    @include screen-max ($mobile) {
+      font-weight: 600;
+    }
+
+    &:not(:last-child) {
+      margin-right: 32px;
+  
+      &:after {
+        position: absolute;
+        display: block;
+        content: '';
+        background: url(../../images/fashion/subnav-transition.svg) no-repeat;
+        background-size: cover;
+        width: 7px;
+        height: 12px;
+        top: 50%;
+        right: -23px;
+        transform: translateY(-50%) translateX(-50%);
+      }
+    }
+  }
+}

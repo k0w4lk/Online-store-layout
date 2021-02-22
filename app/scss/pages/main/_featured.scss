@@ -1,0 +1,53 @@
+.p-m-featured {
+  color: $darkblue;
+  padding: 40px 0 30px;
+
+  @include screen-max ($mobile) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+
+  &-tabs {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 24px;
+    max-width: 312px;
+
+    &__item {
+      @include textParameters (600, 1.4rem, 2.8rem, 0.1, $grey);
+      border: none;
+      background-color: transparent;
+      text-transform: capitalize;
+      position: relative;
+
+      &_active {
+        color: $lightblue;
+
+        &:after {
+          display: block;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          content: "";
+          height: 2px;
+          background-color: $lightblue;
+          width: 40%;
+          margin: 8px auto 0;
+        }
+      }
+    }
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+
+    @include screen-max ($mobile) {
+      flex-direction: column;
+    }
+
+  }
+}

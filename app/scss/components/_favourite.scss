@@ -1,0 +1,10 @@
+.c-favourite {
+  background: url(../../images/favourite.svg) no-repeat center transparent;
+  width: 30px;
+  height: 30px;
+  border: none;
+
+  &_dark {
+    background-image: url(../../images/favourite-dark.svg);
+  }
+}

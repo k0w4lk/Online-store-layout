@@ -1,0 +1,47 @@
+.l-footer {
+  background-color: $darkblue;
+  display: flex;
+
+  @include screen-max ($mobile) {
+    padding: 46px 0 68px;
+  }
+  
+  &__container {
+    max-width: 1270px;
+    width: 100%;
+    padding: 45px 0;
+    display: flex;
+    margin: 0 auto;
+
+    @include screen-max ($mobile) {
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+
+  &__logo {
+    margin-left: 25px;
+    
+    @include screen-max ($mobile) {
+      margin: 0 auto 60px;
+    }
+  }
+
+  &__navigation {
+    margin-left: 56px;
+    @include screen-max ($mobile) {
+      flex-direction: column;
+      margin-left: 0;
+    }
+  }
+
+  &__social {
+    margin-left: auto;
+    align-items: center;
+
+    @include screen-max ($mobile) {
+      margin: 62px auto 0;
+
+    }
+  }
+}

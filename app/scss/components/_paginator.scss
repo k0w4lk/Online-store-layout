@@ -1,0 +1,91 @@
+.c-paginator {
+  display: flex;
+
+  &__button {
+    @include textParameters(500, 1.6rem, 1.6rem, 0.1, $sky, 'Roboto');
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    background: $white center no-repeat;
+    border: 1px solid $sky;
+    border-radius: 5px;
+    
+    &:not(:first-child) {
+      margin-left: 17px;
+    }
+
+    &-direction-left {
+      background-image: url(../../images/button-left.svg);
+      width: 50px;
+
+      &_inactive {
+        background-image: url(../../images/button-left-inactive.svg);
+      }
+    }
+
+    &-direction-right {
+      background-image: url(../../images/button-right.svg);
+      width: 50px;
+      border: 1px solid $lightblue;
+
+      &_inactive {
+        background-image: url(../../images/button-right-inactive.svg);
+      }
+    }
+
+    &-number {
+      &_active {
+        border: none;
+        background-color: $lightblue;
+        color: $white;
+        border-radius: 10px;
+      }
+
+      @include screen-max ($mobile) {
+        display: none;
+      }
+    }
+  }
+
+  &__hidden-numbers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 29px;
+    height: 40px;
+    margin-left: 17px;
+
+    &-item {
+      width: 7px;
+      height: 7px;
+      background-color: $sky;
+      border-radius: 50%;
+    }
+
+    @include screen-max ($mobile) {
+      display: none;
+    }
+  }
+
+  &__mobile-numbers { 
+    display: none;
+
+    @include screen-max ($mobile) {
+      display: flex;
+      max-width: 40px;
+      margin-left: 17px;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+
+  &__mobile-number {
+    @include textParameters(500, 1.6rem, 1.6rem, 0.1, $grey);
+
+    &_active {
+      color: $lightblue;
+    }
+  }
+}

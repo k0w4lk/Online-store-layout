@@ -1,0 +1,9 @@
+.c-logo {
+  background: url(../../images/logo.png) no-repeat;
+  width: 186px;
+  height: 58px;
+
+  &_dark {
+    background: url(../../images/logo-dark.png) no-repeat;
+  }
+}

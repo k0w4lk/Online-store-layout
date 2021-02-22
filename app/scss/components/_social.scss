@@ -1,0 +1,12 @@
+.c-social {
+  display: flex;
+
+  &__link {
+    width: 33px;
+    height: 27px;
+
+    &:not(:first-child) {
+      margin-left: 32px;
+    }
+  }
+}

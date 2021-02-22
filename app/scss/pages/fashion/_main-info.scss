@@ -1,0 +1,28 @@
+.p-f-main-info {
+  padding-top: 22px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 75px 0;
+    background: url(../../../images/fashion/background-fashion.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center 48%;
+    text-align: center;
+  }
+
+  &__period {
+    @include textParameters (700, 2.4rem, 3.6rem, 0, $white);
+    text-transform: uppercase;
+  }
+
+  &__heading {
+    @include textParameters (800, 5.8rem, 8rem, 0.1, $white);
+    text-transform: capitalize;
+  }
+
+  &__tagline {
+    @include textParameters (500, 1.6rem, 2.8rem, 0.1, $white);
+  }
+}
