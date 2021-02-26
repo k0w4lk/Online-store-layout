@@ -1,0 +1,45 @@
+.p-m-main-info {
+  background: url('./../../../images/main-background.jpeg') no-repeat;
+  background-position: center 10%;
+  background-size: cover;
+  padding: 30px 0 130px;
+
+  @include screen-max($mobile) {
+    padding: 0 0 130px;
+  }
+
+  &__container {
+    text-align: center;
+    margin: 170px auto 0;
+    max-width: 630px;
+  }
+
+  &__period {
+    @include textParameters(700, 2.4rem, 3.6rem, 0, $white);
+    text-transform: uppercase;
+
+    @include screen-max($mobile) {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+    }
+  }
+
+  &__heading {
+    @include textParameters(800, 5.8rem, 8rem, 0.1, $white);
+    text-transform: capitalize;
+    margin: 8px 0;
+
+    @include screen-max($mobile) {
+      @include textParameters(700, 3.8rem, 4.7rem, 0, auto);
+    }
+  }
+
+  &__tagline {
+    @include textParameters(500, 1.6rem, 2.8rem, 0.1, $white);
+    display: block;
+  }
+
+  &__button {
+    margin-top: 30px;
+  }
+}

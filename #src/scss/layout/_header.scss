@@ -1,14 +1,15 @@
 .l-header {
   display: flex;
-  
+
   &__container {
     display: flex;
     align-items: center;
     max-width: 1320px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 10px;
 
-    @include screen-max ($mobile) {
+    @include screen-max($mobile) {
       padding: 18px 24px 0;
     }
 
@@ -20,14 +21,13 @@
   &__logo {
     margin-right: 42px;
 
-    @include screen-max ($mobile) {
+    @include screen-max($mobile) {
       margin-right: 0;
     }
-
   }
 
   &__navigation {
-    @include screen-max ($mobile) {
+    @include screen-max($mobile) {
       display: none;
     }
   }
@@ -38,7 +38,7 @@
     margin-left: auto;
 
     &-photo {
-      background: url("../../images/user_photo.svg") no-repeat;
+      background: url('../../images/user_photo.svg') no-repeat;
       background-position: center;
       @include userIconsBackground(0.4);
       width: 56px;
@@ -48,13 +48,13 @@
         background-image: url(../../images/user_photo-dark.svg);
       }
 
-      @include screen-max ($mobile) {
+      @include screen-max($mobile) {
         display: none;
       }
     }
 
     &-name {
-      @include textParameters (600, 1.6rem, 2.8rem, 0.1, $white);
+      @include textParameters(600, 1.6rem, 2.8rem, 0.1, $white);
       text-transform: capitalize;
       margin-left: 12px;
       margin-right: 42px;
@@ -63,13 +63,13 @@
         color: $darkblue;
       }
 
-      @include screen-max ($mobile) {
+      @include screen-max($mobile) {
         display: none;
       }
     }
 
     &-favourite {
-      @include screen-max ($mobile) {
+      @include screen-max($mobile) {
         display: none;
       }
     }
@@ -91,7 +91,7 @@
         position: absolute;
         top: -2px;
         right: -4px;
-        content: "1";
+        content: '1';
         min-width: 20px;
         min-height: 20px;
         background-color: $lightblue;
@@ -112,13 +112,13 @@
     background-size: contain;
     border: none;
     margin-left: 26px;
-    
-    @include screen-max ($mobile) {
+
+    @include screen-max($mobile) {
       display: block;
     }
 
     &_dark {
-      @include screen-max ($mobile) {
+      @include screen-max($mobile) {
         background-image: url(../../images/burger-dark.svg);
       }
     }
