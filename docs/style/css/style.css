@@ -355,7 +355,7 @@ input[type='search']::-webkit-search-results-decoration {
 
 .c-button-product_grey {
   background-color: #bdbdbd;
-  background: #bdbdbd url(../../../images/favourite.svg) no-repeat left 13px center;
+  background: #bdbdbd url(../../images/favourite.svg) no-repeat left 13px center;
   padding: 0 12px 0 42px;
   background-size: 18px 16px;
 }
@@ -1314,7 +1314,7 @@ input[type='search']::-webkit-search-results-decoration {
 }
 
 .p-m-main-info {
-  background: url("./../../../images/main-background.jpeg") no-repeat, #22ddff;
+  background: url("./../../images/main-background.jpeg") no-repeat, #22ddff;
   background-position: center 10%;
   background-size: cover;
   padding: 30px 0 130px;
@@ -1403,27 +1403,27 @@ input[type='search']::-webkit-search-results-decoration {
 }
 
 .p-m-gallery__item_hat {
-  background: url(../../../images/gallery-hat.png) no-repeat center;
+  background: url(../../images/gallery-hat.png) no-repeat center;
   background-size: cover;
 }
 
 .p-m-gallery__item_shoes {
-  background: url(../../../images/gallery-shoes.png) no-repeat center;
+  background: url(../../images/gallery-shoes.png) no-repeat center;
   background-size: cover;
 }
 
 .p-m-gallery__item_dresses {
-  background: url(../../../images/gallery-dresses.png) no-repeat center;
+  background: url(../../images/gallery-dresses.png) no-repeat center;
   background-size: cover;
 }
 
 .p-m-gallery__item_bags {
-  background: url(../../../images/gallery-bags.png) no-repeat center;
+  background: url(../../images/gallery-bags.png) no-repeat center;
   background-size: cover;
 }
 
 .p-m-gallery__item_clothes {
-  background: url(../../../images/gallery-clothes.png) no-repeat center;
+  background: url(../../images/gallery-clothes.png) no-repeat center;
   background-size: cover;
 }
 
@@ -1727,23 +1727,23 @@ input[type='search']::-webkit-search-results-decoration {
 }
 
 .p-m-instagram-shop__switcher-button_left {
-  background: url(../../../images/instagram/button-left.svg) no-repeat center #ffffff;
+  background: url(../../images/instagram/button-left.svg) no-repeat center #ffffff;
   margin-right: 34px;
 }
 
 .p-m-instagram-shop__switcher-button_left_inactive {
   border-color: rgba(255, 255, 255, 0.4);
-  background: url(../../../images/instagram/button-left-inactive.svg) no-repeat center rgba(255, 255, 255, 0.2);
+  background: url(../../images/instagram/button-left-inactive.svg) no-repeat center rgba(255, 255, 255, 0.2);
 }
 
 .p-m-instagram-shop__switcher-button_right {
-  background: url(../../../images/instagram/button-right.svg) no-repeat center #ffffff;
+  background: url(../../images/instagram/button-right.svg) no-repeat center #ffffff;
   margin-left: 34px;
 }
 
 .p-m-instagram-shop__switcher-button_right_inactive {
   border-color: rgba(255, 255, 255, 0.4);
-  background: url(../../../images/instagram/button-right-inactive.svg) no-repeat center rgba(255, 255, 255, 0.2);
+  background: url(../../images/instagram/button-right-inactive.svg) no-repeat center rgba(255, 255, 255, 0.2);
 }
 
 .p-m-instagram-shop__switcher-position {
@@ -1758,10 +1758,10 @@ input[type='search']::-webkit-search-results-decoration {
 }
 
 .p-m-instagram-shop__switcher-position_active {
-  background-color: #48AAFF;
+  background-color: #48aaff;
 }
 
-.p-m-instagram-shop__switcher-position:nth-of-type(n+4) {
+.p-m-instagram-shop__switcher-position:nth-of-type(n + 4) {
   display: none;
 }
 
@@ -1781,7 +1781,7 @@ input[type='search']::-webkit-search-results-decoration {
       -ms-flex-align: center;
           align-items: center;
   padding: 75px 0;
-  background: url(../../../images/fashion/background-fashion.jpeg) no-repeat;
+  background: url(../../images/fashion/background-fashion.jpeg) no-repeat;
   background-size: cover;
   background-position: center 48%;
   text-align: center;
@@ -2013,7 +2013,7 @@ input[type='search']::-webkit-search-results-decoration {
 }
 
 .p-p-product-view__image-zoom {
-  background: rgba(202, 202, 202, 0.1) url(../../../images/zoom.svg) no-repeat center;
+  background: rgba(202, 202, 202, 0.1) url(../../images/zoom.svg) no-repeat center;
   width: 51px;
   height: 51px;
   position: absolute;
@@ -2049,7 +2049,7 @@ input[type='search']::-webkit-search-results-decoration {
 
 .p-p-product-view__slider-image:not(:first-child) {
   margin-left: 14px;
-  opacity: .25;
+  opacity: 0.25;
 }
 
 .p-p-product-view__menu {
@@ -2090,7 +2090,7 @@ input[type='search']::-webkit-search-results-decoration {
   font-size: 1.4rem;
   line-height: 2.8rem;
   letter-spacing: 0.2px;
-  color: #DAB700;
+  color: #dab700;
   font-family: "Montserrat";
 }
 
@@ -2105,12 +2105,12 @@ input[type='search']::-webkit-search-results-decoration {
   width: 14px;
   border: none;
   height: 14px;
-  background: url(../../../images/product/star-empty.svg);
+  background: url(../../images/product/star-empty.svg);
   background-size: cover;
 }
 
 .p-p-product-view__rating-stars-item_filled {
-  background-image: url(../../../images/product/star-filled.svg);
+  background-image: url(../../images/product/star-filled.svg);
 }
 
 .p-p-product-view__rating-stars-item:not(:last-child) {
@@ -2286,8 +2286,8 @@ input[type='search']::-webkit-search-results-decoration {
   font-size: 0;
   border-radius: 50%;
   border: none;
-  background: -o-linear-gradient(45deg, #00F3B9, #2187FF), white center/92%;
-  background: linear-gradient(45deg, #00F3B9, #2187FF), white center/92%;
+  background: -o-linear-gradient(45deg, #00f3b9, #2187ff), white center/92%;
+  background: linear-gradient(45deg, #00f3b9, #2187ff), white center/92%;
 }
 
 .p-p-product-view__share-social-icon:not(:last-child) {
@@ -2787,7 +2787,7 @@ input[type='search']::-webkit-search-results-decoration {
     margin-right: auto;
   }
 
-  .p-m-instagram-shop__category:nth-child(n+2) {
+  .p-m-instagram-shop__category:nth-child(n + 2) {
     display: none;
   }
 
@@ -2799,7 +2799,7 @@ input[type='search']::-webkit-search-results-decoration {
     display: none;
   }
 
-  .p-m-instagram-shop__switcher-position:nth-of-type(n+4) {
+  .p-m-instagram-shop__switcher-position:nth-of-type(n + 4) {
     display: block;
   }
 
@@ -2864,7 +2864,7 @@ input[type='search']::-webkit-search-results-decoration {
     height: 447px;
   }
 
-  .p-p-product-view__slider-image:nth-child(n+4) {
+  .p-p-product-view__slider-image:nth-child(n + 4) {
     display: none;
   }
 
