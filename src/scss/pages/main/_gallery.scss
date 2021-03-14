@@ -19,7 +19,7 @@
       height: 100%;
       justify-content: center;
       grid-template-rows: 220px 220px 468px 220px 220px;
-      grid-template-columns: 370px;
+      grid-template-columns: max-content;
       grid-row-gap: 10px;
     }
 
@@ -52,6 +52,7 @@
         grid-column-start: auto;
         grid-row-start: auto;
         grid-row-end: auto;
+        width: 100vw;
       }
     }
   }

@@ -2707,7 +2707,8 @@ input[type='search']::-webkit-search-results-decoration {
         -ms-flex-pack: center;
             justify-content: center;
     grid-template-rows: 220px 220px 468px 220px 220px;
-    grid-template-columns: 370px;
+    grid-template-columns: -webkit-max-content;
+    grid-template-columns: max-content;
     grid-row-gap: 10px;
   }
 
@@ -2719,6 +2720,7 @@ input[type='search']::-webkit-search-results-decoration {
     grid-column-start: auto;
     grid-row-start: auto;
     grid-row-end: auto;
+    width: 100vw;
   }
 
   .p-m-featured {
