@@ -1358,7 +1358,18 @@ input[type='search']::-webkit-search-results-decoration {
 }
 
 .p-m-main-info__button {
+  display: inline-block;
   margin-top: 30px;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  width: 100%;
+}
+
+.p-m-main-info__button:hover {
+  font-size: 18px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .p-m-gallery {
